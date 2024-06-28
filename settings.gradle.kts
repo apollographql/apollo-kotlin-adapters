@@ -7,4 +7,4 @@ pluginManagement {
   }
 }
 
-include(":apollo-adapters-kotlinx-serialization")
+include(":apollo-adapters-kotlinx-datetime", ":apollo-adapters-core")

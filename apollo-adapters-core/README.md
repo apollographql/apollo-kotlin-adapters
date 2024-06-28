@@ -1,0 +1,1 @@
+# Module apollo-adapters-core

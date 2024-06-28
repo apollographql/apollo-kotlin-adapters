@@ -1,1 +1,0 @@
-# Module apollo-adapters-kotlinx-serialization

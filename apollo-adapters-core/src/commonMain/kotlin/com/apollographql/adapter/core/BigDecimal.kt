@@ -5,7 +5,6 @@ import com.apollographql.apollo3.api.CustomScalarAdapters
 import com.apollographql.apollo3.api.json.JsonReader
 import com.apollographql.apollo3.api.json.JsonWriter
 
-
 /**
  * An [Adapter] that converts to/from [BigDecimal]
  */

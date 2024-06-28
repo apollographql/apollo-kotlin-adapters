@@ -1,0 +1,24 @@
+// Klib ABI Dump
+// Targets: [iosArm64, iosSimulatorArm64, iosX64, js, macosArm64, macosX64, tvosArm64, tvosSimulatorArm64, tvosX64, wasmJs, watchosArm32, watchosArm64, watchosSimulatorArm64]
+// Rendering settings:
+// - Signature version: 2
+// - Show manifest properties: true
+// - Show declarations: true
+
+// Library unique name: <com.apollographql.adapters:apollo-adapters-kotlinx-datetime>
+final object com.apollographql.adapter.datetime/KotlinxInstantAdapter : com.apollographql.apollo3.api/Adapter<kotlinx.datetime/Instant> { // com.apollographql.adapter.datetime/KotlinxInstantAdapter|null[0]
+    final fun fromJson(com.apollographql.apollo3.api.json/JsonReader, com.apollographql.apollo3.api/CustomScalarAdapters): kotlinx.datetime/Instant // com.apollographql.adapter.datetime/KotlinxInstantAdapter.fromJson|fromJson(com.apollographql.apollo3.api.json.JsonReader;com.apollographql.apollo3.api.CustomScalarAdapters){}[0]
+    final fun toJson(com.apollographql.apollo3.api.json/JsonWriter, com.apollographql.apollo3.api/CustomScalarAdapters, kotlinx.datetime/Instant) // com.apollographql.adapter.datetime/KotlinxInstantAdapter.toJson|toJson(com.apollographql.apollo3.api.json.JsonWriter;com.apollographql.apollo3.api.CustomScalarAdapters;kotlinx.datetime.Instant){}[0]
+}
+final object com.apollographql.adapter.datetime/KotlinxLocalDateAdapter : com.apollographql.apollo3.api/Adapter<kotlinx.datetime/LocalDate> { // com.apollographql.adapter.datetime/KotlinxLocalDateAdapter|null[0]
+    final fun fromJson(com.apollographql.apollo3.api.json/JsonReader, com.apollographql.apollo3.api/CustomScalarAdapters): kotlinx.datetime/LocalDate // com.apollographql.adapter.datetime/KotlinxLocalDateAdapter.fromJson|fromJson(com.apollographql.apollo3.api.json.JsonReader;com.apollographql.apollo3.api.CustomScalarAdapters){}[0]
+    final fun toJson(com.apollographql.apollo3.api.json/JsonWriter, com.apollographql.apollo3.api/CustomScalarAdapters, kotlinx.datetime/LocalDate) // com.apollographql.adapter.datetime/KotlinxLocalDateAdapter.toJson|toJson(com.apollographql.apollo3.api.json.JsonWriter;com.apollographql.apollo3.api.CustomScalarAdapters;kotlinx.datetime.LocalDate){}[0]
+}
+final object com.apollographql.adapter.datetime/KotlinxLocalDateTimeAdapter : com.apollographql.apollo3.api/Adapter<kotlinx.datetime/LocalDateTime> { // com.apollographql.adapter.datetime/KotlinxLocalDateTimeAdapter|null[0]
+    final fun fromJson(com.apollographql.apollo3.api.json/JsonReader, com.apollographql.apollo3.api/CustomScalarAdapters): kotlinx.datetime/LocalDateTime // com.apollographql.adapter.datetime/KotlinxLocalDateTimeAdapter.fromJson|fromJson(com.apollographql.apollo3.api.json.JsonReader;com.apollographql.apollo3.api.CustomScalarAdapters){}[0]
+    final fun toJson(com.apollographql.apollo3.api.json/JsonWriter, com.apollographql.apollo3.api/CustomScalarAdapters, kotlinx.datetime/LocalDateTime) // com.apollographql.adapter.datetime/KotlinxLocalDateTimeAdapter.toJson|toJson(com.apollographql.apollo3.api.json.JsonWriter;com.apollographql.apollo3.api.CustomScalarAdapters;kotlinx.datetime.LocalDateTime){}[0]
+}
+final object com.apollographql.adapter.datetime/KotlinxLocalTimeAdapter : com.apollographql.apollo3.api/Adapter<kotlinx.datetime/LocalTime> { // com.apollographql.adapter.datetime/KotlinxLocalTimeAdapter|null[0]
+    final fun fromJson(com.apollographql.apollo3.api.json/JsonReader, com.apollographql.apollo3.api/CustomScalarAdapters): kotlinx.datetime/LocalTime // com.apollographql.adapter.datetime/KotlinxLocalTimeAdapter.fromJson|fromJson(com.apollographql.apollo3.api.json.JsonReader;com.apollographql.apollo3.api.CustomScalarAdapters){}[0]
+    final fun toJson(com.apollographql.apollo3.api.json/JsonWriter, com.apollographql.apollo3.api/CustomScalarAdapters, kotlinx.datetime/LocalTime) // com.apollographql.adapter.datetime/KotlinxLocalTimeAdapter.toJson|toJson(com.apollographql.apollo3.api.json.JsonWriter;com.apollographql.apollo3.api.CustomScalarAdapters;kotlinx.datetime.LocalTime){}[0]
+}

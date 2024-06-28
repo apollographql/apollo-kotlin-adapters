@@ -1,6 +1,4 @@
-package com.apollographql.apollo3.adapter
-
-import com.apollographql.adapter.core.BigDecimal
+package com.apollographql.adapter.core
 
 @JsModule("big.js")
 internal external fun Big(raw: JsAny): Big

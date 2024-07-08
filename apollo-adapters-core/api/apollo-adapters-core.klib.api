@@ -8,9 +8,9 @@
 
 // Library unique name: <com.apollographql.adapters:apollo-adapters-core>
 final fun (com.apollographql.adapter.core/BigDecimal).com.apollographql.adapter.core/toNumber(): kotlin/Number // com.apollographql.adapter.core/toNumber|toNumber@com.apollographql.adapter.core.BigDecimal(){}[0]
-final object com.apollographql.adapter.core/BigDecimalAdapter : com.apollographql.apollo3.api/Adapter<com.apollographql.adapter.core/BigDecimal> { // com.apollographql.adapter.core/BigDecimalAdapter|null[0]
-    final fun fromJson(com.apollographql.apollo3.api.json/JsonReader, com.apollographql.apollo3.api/CustomScalarAdapters): com.apollographql.adapter.core/BigDecimal // com.apollographql.adapter.core/BigDecimalAdapter.fromJson|fromJson(com.apollographql.apollo3.api.json.JsonReader;com.apollographql.apollo3.api.CustomScalarAdapters){}[0]
-    final fun toJson(com.apollographql.apollo3.api.json/JsonWriter, com.apollographql.apollo3.api/CustomScalarAdapters, com.apollographql.adapter.core/BigDecimal) // com.apollographql.adapter.core/BigDecimalAdapter.toJson|toJson(com.apollographql.apollo3.api.json.JsonWriter;com.apollographql.apollo3.api.CustomScalarAdapters;com.apollographql.adapter.core.BigDecimal){}[0]
+final object com.apollographql.adapter.core/BigDecimalAdapter : com.apollographql.apollo.api/Adapter<com.apollographql.adapter.core/BigDecimal> { // com.apollographql.adapter.core/BigDecimalAdapter|null[0]
+    final fun fromJson(com.apollographql.apollo.api.json/JsonReader, com.apollographql.apollo.api/CustomScalarAdapters): com.apollographql.adapter.core/BigDecimal // com.apollographql.adapter.core/BigDecimalAdapter.fromJson|fromJson(com.apollographql.apollo.api.json.JsonReader;com.apollographql.apollo.api.CustomScalarAdapters){}[0]
+    final fun toJson(com.apollographql.apollo.api.json/JsonWriter, com.apollographql.apollo.api/CustomScalarAdapters, com.apollographql.adapter.core/BigDecimal) // com.apollographql.adapter.core/BigDecimalAdapter.toJson|toJson(com.apollographql.apollo.api.json.JsonWriter;com.apollographql.apollo.api.CustomScalarAdapters;com.apollographql.adapter.core.BigDecimal){}[0]
 }
 // Targets: [apple]
 final class com.apollographql.adapter.core/BigDecimal : kotlin/Number { // com.apollographql.adapter.core/BigDecimal|null[0]

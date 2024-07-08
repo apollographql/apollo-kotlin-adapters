@@ -1,5 +1,5 @@
-import com.gradleup.librarian.core.forEachKotlinCompilerOptions
-import com.gradleup.librarian.core.librarianModule
+import com.gradleup.librarian.gradle.forEachKotlinCompilerOptions
+import com.gradleup.librarian.gradle.librarianModule
 import org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi
 import org.jetbrains.kotlin.gradle.dsl.KotlinNativeCompilerOptions
 import org.jetbrains.kotlin.gradle.targets.js.dsl.ExperimentalWasmDsl
@@ -8,7 +8,7 @@ plugins {
   id("org.jetbrains.kotlin.multiplatform")
 }
   
-librarianModule()  
+librarianModule(true)
 
 kotlin {
   jvm()

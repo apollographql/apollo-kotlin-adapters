@@ -52,6 +52,11 @@ kotlin {
       }
     }
 
+    findByName("jsCommonMain")?.apply {
+      dependencies {
+        implementation(npm("big.js", "5.2.2"))
+      }
+    }
     getByName("commonTest") {
       dependencies {
         implementation(libs.kotlin.test)

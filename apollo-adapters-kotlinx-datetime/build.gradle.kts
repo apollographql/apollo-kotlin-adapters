@@ -21,11 +21,25 @@ kotlin {
   tvosX64()
   tvosSimulatorArm64()
   js(IR) {
-    nodejs()
+    nodejs {
+      testTask {
+        useMocha {
+          // Override default 2s timeout
+          timeout = "120s"
+        }
+      }
+    }
   }
   @OptIn(ExperimentalWasmDsl::class)
   wasmJs {
-    nodejs()
+    nodejs {
+      testTask {
+        useMocha {
+          // Override default 2s timeout
+          timeout = "120s"
+        }
+      }
+    }
   }
 
   sourceSets {

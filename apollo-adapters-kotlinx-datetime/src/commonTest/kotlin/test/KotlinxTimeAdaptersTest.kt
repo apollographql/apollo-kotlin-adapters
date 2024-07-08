@@ -1,16 +1,18 @@
+package test
+
 import com.apollographql.adapter.datetime.KotlinxInstantAdapter
 import com.apollographql.adapter.datetime.KotlinxLocalDateAdapter
 import com.apollographql.adapter.datetime.KotlinxLocalDateTimeAdapter
 import com.apollographql.adapter.datetime.KotlinxLocalTimeAdapter
-import com.apollographql.apollo3.api.Adapter
-import com.apollographql.apollo3.api.CustomScalarAdapters
-import com.apollographql.apollo3.api.json.BufferedSourceJsonReader
-import com.apollographql.apollo3.api.json.buildJsonString
+import com.apollographql.apollo.api.Adapter
+import com.apollographql.apollo.api.CustomScalarAdapters
+import com.apollographql.apollo.api.json.BufferedSourceJsonReader
+import com.apollographql.apollo.api.json.buildJsonString
 import kotlinx.datetime.TimeZone
 import kotlinx.datetime.atTime
 import kotlinx.datetime.toInstant
 import okio.Buffer
-import org.junit.Test
+import kotlin.test.Test
 import kotlin.test.assertEquals
 
 class KotlinxTimeAdaptersTest {

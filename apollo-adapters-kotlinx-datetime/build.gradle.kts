@@ -1,11 +1,11 @@
-import com.gradleup.librarian.core.librarianModule
+import com.gradleup.librarian.gradle.librarianModule
 import org.jetbrains.kotlin.gradle.targets.js.dsl.ExperimentalWasmDsl
 
 plugins {
   id("org.jetbrains.kotlin.multiplatform")
 }
   
-librarianModule()  
+librarianModule(true)
 
 kotlin {
   jvm()
@@ -21,11 +21,25 @@ kotlin {
   tvosX64()
   tvosSimulatorArm64()
   js(IR) {
-    nodejs()
+    nodejs {
+      testTask {
+        useMocha {
+          // Override default 2s timeout
+          timeout = "120s"
+        }
+      }
+    }
   }
   @OptIn(ExperimentalWasmDsl::class)
   wasmJs {
-    nodejs()
+    nodejs {
+      testTask {
+        useMocha {
+          // Override default 2s timeout
+          timeout = "120s"
+        }
+      }
+    }
   }
 
   sourceSets {

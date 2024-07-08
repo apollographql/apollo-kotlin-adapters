@@ -1,4 +1,4 @@
 [libraries]
-apollo-api = "com.apollographql.apollo3:apollo-api:4.0.0-beta.7"
+apollo-api = "com.apollographql.apollo:apollo-api:4.0.0-rc.1"
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test" }
 kotlinx-datetime = "org.jetbrains.kotlinx:kotlinx-datetime:0.5.0"

@@ -1,4 +1,4 @@
-# Apollo Adapters
+# Welcome
 
 Add to your project:
 

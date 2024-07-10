@@ -4,7 +4,9 @@
 
 <instance-profile id="doc"
                  name="Apollo Adapters"
-                 start-page="starter-topic.md">
+                 start-page="welcome.md">
 
-    <toc-element topic="starter-topic.md"/>
+    <toc-element topic="welcome.md"/>
+    <toc-element toc-title="GitHub" href="https://github.com/apollographql/apollo-kotlin-adapters"/>
+    <toc-element toc-title="Kdoc" href="https://github.com/apollographql/apollo-kotlin-adapters/kdoc"/>
 </instance-profile>

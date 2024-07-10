@@ -11,6 +11,7 @@
 
 # Generated files
 build
+/reports
 .kotlin
 
 # Place where the Android SDK path is set
@@ -23,4 +24,3 @@ project.xcworkspace
 # Mac OS Finder
 .DS_Store
 Thumbs.db
-

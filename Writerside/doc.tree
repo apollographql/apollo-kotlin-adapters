@@ -8,5 +8,5 @@
 
     <toc-element topic="welcome.md"/>
     <toc-element toc-title="GitHub" href="https://github.com/apollographql/apollo-kotlin-adapters"/>
-    <toc-element toc-title="Kdoc" href="https://github.com/apollographql/apollo-kotlin-adapters/kdoc"/>
+    <toc-element toc-title="Kdoc" href="https://apollographql.github.io/apollo-kotlin-adapters/kdoc"/>
 </instance-profile>

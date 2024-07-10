@@ -6,6 +6,7 @@
   <build-profile instance="doc">
     <variables>
       <header-logo>apollo_logo.svg</header-logo>
+      <custom-favicons>favicon-96x96.png,favicon-192x192.png</custom-favicons>
       <noindex-content>true</noindex-content>
       <download-title>KDoc</download-title>
       <download-page>https://apollographql.github.io/apollo-kotlin-adapters/kdoc/</download-page>

@@ -1,0 +1,16 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:com.apollographql.adapter.core/BigDecimal/equals/#kotlin.Any?/PointingToDeclaration/apollo-adapters-core/com.apollographql.adapter.core/-big-decimal/[wasm-js]equals.html
+$dokka.location:com.apollographql.adapter.core/BigDecimal/hashCode/#/PointingToDeclaration/apollo-adapters-core/com.apollographql.adapter.core/-big-decimal/[wasm-js]hash-code.html
+$dokka.location:com.apollographql.adapter.core/BigDecimal/toByte/#/PointingToDeclaration/apollo-adapters-core/com.apollographql.adapter.core/-big-decimal/[wasm-js]to-byte.html
+$dokka.location:com.apollographql.adapter.core/BigDecimal/toChar/#/PointingToDeclaration/apollo-adapters-core/com.apollographql.adapter.core/-big-decimal/[wasm-js]to-char.html
+$dokka.location:com.apollographql.adapter.core/BigDecimal/toDouble/#/PointingToDeclaration/apollo-adapters-core/com.apollographql.adapter.core/-big-decimal/[wasm-js]to-double.html
+$dokka.location:com.apollographql.adapter.core/BigDecimal/toFloat/#/PointingToDeclaration/apollo-adapters-core/com.apollographql.adapter.core/-big-decimal/[wasm-js]to-float.html
+$dokka.location:com.apollographql.adapter.core/BigDecimal/toInt/#/PointingToDeclaration/apollo-adapters-core/com.apollographql.adapter.core/-big-decimal/[wasm-js]to-int.html
+$dokka.location:com.apollographql.adapter.core/BigDecimal/toLong/#/PointingToDeclaration/apollo-adapters-core/com.apollographql.adapter.core/-big-decimal/[wasm-js]to-long.html
+$dokka.location:com.apollographql.adapter.core/BigDecimal/toShort/#/PointingToDeclaration/apollo-adapters-core/com.apollographql.adapter.core/-big-decimal/[wasm-js]to-short.html
+$dokka.location:com.apollographql.adapter.core/BigDecimal/toString/#/PointingToDeclaration/apollo-adapters-core/com.apollographql.adapter.core/-big-decimal/[wasm-js]to-string.html
+module:apollo-adapters-core
+com.apollographql.adapter.core
+module:apollo-adapters-kotlinx-datetime
+com.apollographql.adapter.datetime

@@ -19,7 +19,7 @@ Add to your project:
 
 ```toml
 [libraries]
-apollo-adapters-core = "com.apollographql.adapters:apollo-adapters:%latest_version%"
+apollo-adapters-core = "com.apollographql.adapters:apollo-adapters-core:%latest_version%"
 apollo-adapters-kotlinx-datetime = "com.apollographql.adapters:apollo-adapters-kotlinx-datetime:%latest_version%"
 ```
 

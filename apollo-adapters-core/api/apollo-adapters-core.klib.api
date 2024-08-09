@@ -12,6 +12,10 @@ final object com.apollographql.adapter.core/BigDecimalAdapter : com.apollographq
     final fun fromJson(com.apollographql.apollo.api.json/JsonReader, com.apollographql.apollo.api/CustomScalarAdapters): com.apollographql.adapter.core/BigDecimal // com.apollographql.adapter.core/BigDecimalAdapter.fromJson|fromJson(com.apollographql.apollo.api.json.JsonReader;com.apollographql.apollo.api.CustomScalarAdapters){}[0]
     final fun toJson(com.apollographql.apollo.api.json/JsonWriter, com.apollographql.apollo.api/CustomScalarAdapters, com.apollographql.adapter.core/BigDecimal) // com.apollographql.adapter.core/BigDecimalAdapter.toJson|toJson(com.apollographql.apollo.api.json.JsonWriter;com.apollographql.apollo.api.CustomScalarAdapters;com.apollographql.adapter.core.BigDecimal){}[0]
 }
+final object com.apollographql.adapter.core/UnitAdapter : com.apollographql.apollo.api/Adapter<kotlin/Unit> { // com.apollographql.adapter.core/UnitAdapter|null[0]
+    final fun fromJson(com.apollographql.apollo.api.json/JsonReader, com.apollographql.apollo.api/CustomScalarAdapters) // com.apollographql.adapter.core/UnitAdapter.fromJson|fromJson(com.apollographql.apollo.api.json.JsonReader;com.apollographql.apollo.api.CustomScalarAdapters){}[0]
+    final fun toJson(com.apollographql.apollo.api.json/JsonWriter, com.apollographql.apollo.api/CustomScalarAdapters, kotlin/Unit) // com.apollographql.adapter.core/UnitAdapter.toJson|toJson(com.apollographql.apollo.api.json.JsonWriter;com.apollographql.apollo.api.CustomScalarAdapters;kotlin.Unit){}[0]
+}
 // Targets: [apple]
 final class com.apollographql.adapter.core/BigDecimal : kotlin/Number { // com.apollographql.adapter.core/BigDecimal|null[0]
     constructor <init>(kotlin/Double) // com.apollographql.adapter.core/BigDecimal.<init>|<init>(kotlin.Double){}[0]

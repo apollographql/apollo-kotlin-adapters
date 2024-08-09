@@ -34,6 +34,7 @@ Apollo Kotlin Adapters contains adapters for common date and big decimal GraphQL
 | `com.apollographql.adapter.core.JavaLocalTimeAdapter`            | apollo-adapters-core             | For `java.time.LocalTime` ISO8601 dates                                                          |
 | `com.apollographql.adapter.core.JavaOffsetDateTimeAdapter`       | apollo-adapters-core             | For `java.time.OffsetDateTime` ISO8601 dates                                                     |
 | `com.apollographql.adapter.core.DateAdapter`                     | apollo-adapters-core             | For `java.util.Date` ISO8601 dates                                                               |
+| `com.apollographql.adapter.core.UnitAdapter`                     | apollo-adapters-core             | For `kotlin.Unit` values                                                                         |
 | `com.apollographql.adapter.datetime.KotlinxInstantAdapter`       | apollo-adapters-kotlinx-datetime | For `kotlinx.datetime.Instant` ISO8601 dates                                                     |
 | `com.apollographql.adapter.datetime.KotlinxLocalDateAdapter`     | apollo-adapters-kotlinx-datetime | For `kotlinx.datetime.LocalDate` ISO8601 dates                                                   |
 | `com.apollographql.adapter.datetime.KotlinxLocalDateTimeAdapter` | apollo-adapters-kotlinx-datetime | For `kotlinx.datetime.LocalDateTime` ISO8601 dates                                               |

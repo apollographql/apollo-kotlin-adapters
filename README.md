@@ -19,26 +19,29 @@ Add to your project:
 
 ```toml
 [libraries]
-apollo-adapters-core = "com.apollographql.adapters:apollo-adapters-core:%latest_version%"
-apollo-adapters-kotlinx-datetime = "com.apollographql.adapters:apollo-adapters-kotlinx-datetime:%latest_version%"
+apollo-adapters-core = "com.apollographql.adapters:apollo-adapters-core:0.0.3"
+apollo-adapters-kotlinx-datetime = "com.apollographql.adapters:apollo-adapters-kotlinx-datetime:0.0.3"
 ```
 
-Apollo Kotlin Adapters contains adapters for common date and big decimal GraphQL scalars.
+Apollo Kotlin Adapters contains adapters for common date and big decimal classes.
 
-| Adapter                                                          | Artifact                         | Description                                                                                      |
-|------------------------------------------------------------------|----------------------------------|--------------------------------------------------------------------------------------------------|
-| `com.apollographql.adapter.core.BigDecimalAdapter`               | apollo-adapters-core             | For a Multiplatform `com.apollographql.adapter.core.BigDecimal` class holding big decimal values |
-| `com.apollographql.adapter.core.JavaInstantAdapter`              | apollo-adapters-core             | For `java.time.Instant` ISO8601 dates                                                            |
-| `com.apollographql.adapter.core.JavaLocalDateAdapter`            | apollo-adapters-core             | For `java.time.LocalDate` ISO8601 dates                                                          |
-| `com.apollographql.adapter.core.JavaLocalDateTimeAdapter`        | apollo-adapters-core             | For `java.time.LocalDateTime` ISO8601 dates                                                      |
-| `com.apollographql.adapter.core.JavaLocalTimeAdapter`            | apollo-adapters-core             | For `java.time.LocalTime` ISO8601 dates                                                          |
-| `com.apollographql.adapter.core.JavaOffsetDateTimeAdapter`       | apollo-adapters-core             | For `java.time.OffsetDateTime` ISO8601 dates                                                     |
-| `com.apollographql.adapter.core.DateAdapter`                     | apollo-adapters-core             | For `java.util.Date` ISO8601 dates                                                               |
-| `com.apollographql.adapter.core.UnitAdapter`                     | apollo-adapters-core             | For `kotlin.Unit` values                                                                         |
-| `com.apollographql.adapter.datetime.KotlinxInstantAdapter`       | apollo-adapters-kotlinx-datetime | For `kotlinx.datetime.Instant` ISO8601 dates                                                     |
-| `com.apollographql.adapter.datetime.KotlinxLocalDateAdapter`     | apollo-adapters-kotlinx-datetime | For `kotlinx.datetime.LocalDate` ISO8601 dates                                                   |
-| `com.apollographql.adapter.datetime.KotlinxLocalDateTimeAdapter` | apollo-adapters-kotlinx-datetime | For `kotlinx.datetime.LocalDateTime` ISO8601 dates                                               |
-| `com.apollographql.adapter.datetime.KotlinxLocalTimeAdapter`     | apollo-adapters-kotlinx-datetime | For `kotlinx.datetime.LocalTime` ISO8601 dates                                                   |
+> [!WARNING]
+> GraphQL scalar names and [coercing](https://www.graphql.de/blog/scalars-in-depth/) may vary depending on your server implementation. The adapters are provided for convenience but may not map exactly what your server expects or returns. In those cases, feel free to copy/paste and adapt the implementation. 
+
+| Adapter                       | Artifact                         | Kotlin type                                 |
+|-------------------------------|----------------------------------|---------------------------------------------|
+| `BigDecimalAdapter`           | apollo-adapters-core             | `com.apollographql.adapter.core.BigDecimal` |
+| `JavaInstantAdapter`          | apollo-adapters-core             | `java.time.Instant`                         |
+| `JavaLocalDateAdapter`        | apollo-adapters-core             | `java.time.LocalDate`                       |
+| `JavaLocalDateTimeAdapter`    | apollo-adapters-core             | `java.time.LocalDateTime`                   |
+| `JavaLocalTimeAdapter`        | apollo-adapters-core             | `java.time.LocalTime`                       |
+| `JavaOffsetDateTimeAdapter`   | apollo-adapters-core             | `java.time.OffsetDateTime`                  |
+| `DateAdapter`                 | apollo-adapters-core             | `java.util.Date`                            |
+| `UnitAdapter`                 | apollo-adapters-core             | `kotlin.Unit`                               |
+| `KotlinxInstantAdapter`       | apollo-adapters-kotlinx-datetime | `kotlinx.datetime.Instant`                  |
+| `KotlinxLocalDateAdapter`     | apollo-adapters-kotlinx-datetime | `kotlinx.datetime.LocalDate`                |
+| `KotlinxLocalDateTimeAdapter` | apollo-adapters-kotlinx-datetime | `kotlinx.datetime.LocalDateTime`            |
+| `KotlinxLocalTimeAdapter`     | apollo-adapters-kotlinx-datetime | `kotlinx.datetime.LocalTime`                |
 
 Because some adapters use `kotlinx.datetime` (which itself uses `java.time`), `apollo-adapters-kotlinx-datetime` requires [core library desugaring](https://developer.android.com/studio/write/java8-support#library-desugaring) on Android API levels < 26
 

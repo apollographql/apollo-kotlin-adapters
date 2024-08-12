@@ -2,6 +2,7 @@ package com.apollographql.adapter.core
 
 import com.apollographql.apollo.api.Adapter
 import com.apollographql.apollo.api.CustomScalarAdapters
+import com.apollographql.apollo.api.json.JsonNumber
 import com.apollographql.apollo.api.json.JsonReader
 import com.apollographql.apollo.api.json.JsonWriter
 
@@ -14,7 +15,7 @@ object BigDecimalAdapter : Adapter<BigDecimal> {
   }
 
   override fun toJson(writer: JsonWriter, customScalarAdapters: CustomScalarAdapters, value: BigDecimal) {
-    writer.value(value.toString())
+    writer.value(JsonNumber(value.toString()))
   }
 }
 

@@ -1,5 +1,7 @@
 # Next version (unreleased)
 
+* Encode BigDecimal as JsonNumber
+
 # Version 0.0.3
 _2024-08-12_
 

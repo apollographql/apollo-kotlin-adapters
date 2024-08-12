@@ -19,8 +19,8 @@ Add to your project:
 
 ```toml
 [libraries]
-apollo-adapters-core = "com.apollographql.adapters:apollo-adapters-core:%latest_version%"
-apollo-adapters-kotlinx-datetime = "com.apollographql.adapters:apollo-adapters-kotlinx-datetime:%latest_version%"
+apollo-adapters-core = "com.apollographql.adapters:apollo-adapters-core:0.0.3"
+apollo-adapters-kotlinx-datetime = "com.apollographql.adapters:apollo-adapters-kotlinx-datetime:0.0.3"
 ```
 
 Apollo Kotlin Adapters contains adapters for common date and big decimal classes.

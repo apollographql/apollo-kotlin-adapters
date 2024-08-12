@@ -1,5 +1,8 @@
 # Next version (unreleased)
 
+# Version 0.0.3
+_2024-08-12_
+
 * Add `UnitAdapter` (#14)
 
 # Version 0.0.2

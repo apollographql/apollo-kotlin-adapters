@@ -9,6 +9,7 @@ import java.time.LocalDate
 import java.time.LocalDateTime
 import java.time.LocalTime
 import java.time.OffsetDateTime
+import java.time.ZonedDateTime
 import java.time.format.DateTimeFormatter
 
 
@@ -88,6 +89,25 @@ object JavaOffsetDateTimeAdapter : Adapter<OffsetDateTime> {
 }
 
 /**
+ * An [Adapter] that converts a date and time to/from [java.time.ZonedDateTime]
+ *
+ * Examples:
+ * - "2010-06-01T22:19:44.475Z"
+ * - "2010-06-01T23:19:44.475+01:00"
+ * - "2010-06-01T23:19:44.475+02:00[Europe/Prague]"
+ *
+ */
+object JavaZonedDateTimeAdapter : Adapter<ZonedDateTime> {
+  override fun fromJson(reader: JsonReader, customScalarAdapters: CustomScalarAdapters): ZonedDateTime {
+    return ZonedDateTime.parse(reader.nextString()!!)
+  }
+
+  override fun toJson(writer: JsonWriter, customScalarAdapters: CustomScalarAdapters, value: ZonedDateTime) {
+    writer.value(value.format(DateTimeFormatter.ISO_ZONED_DATE_TIME))
+  }
+}
+
+/**
  * An [Adapter] that converts a time to/from [java.time.LocalTime]
  *
  * Examples:
@@ -97,7 +117,7 @@ object JavaOffsetDateTimeAdapter : Adapter<OffsetDateTime> {
  */
 object JavaLocalTimeAdapter : Adapter<LocalTime> {
   override fun fromJson(reader: JsonReader, customScalarAdapters: CustomScalarAdapters): LocalTime {
-    return LocalTime.parse(reader.nextString())
+    return LocalTime.parse(reader.nextString()!!)
   }
 
   override fun toJson(writer: JsonWriter, customScalarAdapters: CustomScalarAdapters, value: LocalTime) {

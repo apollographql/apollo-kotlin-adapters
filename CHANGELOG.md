@@ -1,5 +1,8 @@
 # Next version (unreleased)
 
+# Version 0.0.4
+_2024-09-02_
+
 * Add JavaZonedDateTimeAdapter by @leinardi (#21) (#22)
 * Encode BigDecimal as JSON number (#18)
 * Update Apollo to 4.0.0 (#17)

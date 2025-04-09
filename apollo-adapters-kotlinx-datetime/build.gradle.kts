@@ -1,11 +1,11 @@
-import com.gradleup.librarian.gradle.librarianModule
+import com.gradleup.librarian.gradle.Librarian
 import org.jetbrains.kotlin.gradle.targets.js.dsl.ExperimentalWasmDsl
 
 plugins {
   id("org.jetbrains.kotlin.multiplatform")
 }
-  
-librarianModule(true)
+
+Librarian.module(project)
 
 kotlin {
   jvm()

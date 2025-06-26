@@ -1,11 +1,3 @@
-public final class com/apollographql/adapter/datetime/KotlinxInstantAdapter : com/apollographql/apollo/api/Adapter {
-	public static final field INSTANCE Lcom/apollographql/adapter/datetime/KotlinxInstantAdapter;
-	public synthetic fun fromJson (Lcom/apollographql/apollo/api/json/JsonReader;Lcom/apollographql/apollo/api/CustomScalarAdapters;)Ljava/lang/Object;
-	public fun fromJson (Lcom/apollographql/apollo/api/json/JsonReader;Lcom/apollographql/apollo/api/CustomScalarAdapters;)Lkotlinx/datetime/Instant;
-	public synthetic fun toJson (Lcom/apollographql/apollo/api/json/JsonWriter;Lcom/apollographql/apollo/api/CustomScalarAdapters;Ljava/lang/Object;)V
-	public fun toJson (Lcom/apollographql/apollo/api/json/JsonWriter;Lcom/apollographql/apollo/api/CustomScalarAdapters;Lkotlinx/datetime/Instant;)V
-}
-
 public final class com/apollographql/adapter/datetime/KotlinxLocalDateAdapter : com/apollographql/apollo/api/Adapter {
 	public static final field INSTANCE Lcom/apollographql/adapter/datetime/KotlinxLocalDateAdapter;
 	public synthetic fun fromJson (Lcom/apollographql/apollo/api/json/JsonReader;Lcom/apollographql/apollo/api/CustomScalarAdapters;)Ljava/lang/Object;

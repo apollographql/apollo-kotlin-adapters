@@ -1,6 +1,5 @@
 package test
 
-import com.apollographql.adapter.datetime.KotlinxInstantAdapter
 import com.apollographql.adapter.datetime.KotlinxLocalDateAdapter
 import com.apollographql.adapter.datetime.KotlinxLocalDateTimeAdapter
 import com.apollographql.adapter.datetime.KotlinxLocalTimeAdapter
@@ -14,7 +13,9 @@ import kotlinx.datetime.toInstant
 import okio.Buffer
 import kotlin.test.Test
 import kotlin.test.assertEquals
+import kotlin.time.ExperimentalTime
 
+@ExperimentalTime
 class KotlinxTimeAdaptersTest {
   private fun String.jsonReader() = BufferedSourceJsonReader(Buffer().writeUtf8("\"${this}\""))
 
@@ -27,18 +28,6 @@ class KotlinxTimeAdaptersTest {
       toJson(this, CustomScalarAdapters.Empty, value)
     }.removePrefix("\"")
         .removeSuffix("\"")
-  }
-
-  @Test
-  fun kotlinxInstant() {
-    var instant = KotlinxInstantAdapter.fromJson("2010-06-01T22:19:44.475Z")
-    assertEquals(1275430784475, instant.toEpochMilliseconds())
-    assertEquals("2010-06-01T22:19:44.475Z", KotlinxInstantAdapter.toJson(instant))
-
-    instant = KotlinxInstantAdapter.fromJson("2010-06-01T23:19:44.475+01:00")
-    assertEquals(1275430784475, instant.toEpochMilliseconds())
-    // Time zone is lost
-    assertEquals("2010-06-01T22:19:44.475Z", KotlinxInstantAdapter.toJson(instant))
   }
 
   @Test

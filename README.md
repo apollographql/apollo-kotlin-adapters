@@ -30,6 +30,7 @@ Apollo Kotlin Adapters contains adapters for common date and big decimal classes
 | Adapter                       | Artifact                         | Kotlin type                                 |
 |-------------------------------|----------------------------------|---------------------------------------------|
 | `BigDecimalAdapter`           | apollo-adapters-core             | `com.apollographql.adapter.core.BigDecimal` |
+| `KotlinInstantAdapter`        | apollo-adapters-core             | `kotlin.time.Instant`                       |
 | `JavaInstantAdapter`          | apollo-adapters-core             | `java.time.Instant`                         |
 | `JavaLocalDateAdapter`        | apollo-adapters-core             | `java.time.LocalDate`                       |
 | `JavaLocalDateTimeAdapter`    | apollo-adapters-core             | `java.time.LocalDateTime`                   |
@@ -38,7 +39,6 @@ Apollo Kotlin Adapters contains adapters for common date and big decimal classes
 | `JavaZonedDateTimeAdapter`    | apollo-adapters-core             | `java.time.ZonedDateTime`                   |
 | `DateAdapter`                 | apollo-adapters-core             | `java.util.Date`                            |
 | `UnitAdapter`                 | apollo-adapters-core             | `kotlin.Unit`                               |
-| `KotlinxInstantAdapter`       | apollo-adapters-kotlinx-datetime | `kotlinx.datetime.Instant`                  |
 | `KotlinxLocalDateAdapter`     | apollo-adapters-kotlinx-datetime | `kotlinx.datetime.LocalDate`                |
 | `KotlinxLocalDateTimeAdapter` | apollo-adapters-kotlinx-datetime | `kotlinx.datetime.LocalDateTime`            |
 | `KotlinxLocalTimeAdapter`     | apollo-adapters-kotlinx-datetime | `kotlinx.datetime.LocalTime`                |

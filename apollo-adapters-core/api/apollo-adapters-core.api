@@ -66,6 +66,14 @@ public final class com/apollographql/adapter/core/JavaZonedDateTimeAdapter : com
 	public fun toJson (Lcom/apollographql/apollo/api/json/JsonWriter;Lcom/apollographql/apollo/api/CustomScalarAdapters;Ljava/time/ZonedDateTime;)V
 }
 
+public final class com/apollographql/adapter/core/KotlinInstantAdapter : com/apollographql/apollo/api/Adapter {
+	public static final field INSTANCE Lcom/apollographql/adapter/core/KotlinInstantAdapter;
+	public synthetic fun fromJson (Lcom/apollographql/apollo/api/json/JsonReader;Lcom/apollographql/apollo/api/CustomScalarAdapters;)Ljava/lang/Object;
+	public fun fromJson (Lcom/apollographql/apollo/api/json/JsonReader;Lcom/apollographql/apollo/api/CustomScalarAdapters;)Lkotlin/time/Instant;
+	public synthetic fun toJson (Lcom/apollographql/apollo/api/json/JsonWriter;Lcom/apollographql/apollo/api/CustomScalarAdapters;Ljava/lang/Object;)V
+	public fun toJson (Lcom/apollographql/apollo/api/json/JsonWriter;Lcom/apollographql/apollo/api/CustomScalarAdapters;Lkotlin/time/Instant;)V
+}
+
 public final class com/apollographql/adapter/core/UnitAdapter : com/apollographql/apollo/api/Adapter {
 	public static final field INSTANCE Lcom/apollographql/adapter/core/UnitAdapter;
 	public synthetic fun fromJson (Lcom/apollographql/apollo/api/json/JsonReader;Lcom/apollographql/apollo/api/CustomScalarAdapters;)Ljava/lang/Object;

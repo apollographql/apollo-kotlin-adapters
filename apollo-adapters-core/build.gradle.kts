@@ -23,6 +23,7 @@ kotlin {
   tvosArm64()
   tvosX64()
   tvosSimulatorArm64()
+  linuxX64()
   js(IR) {
     nodejs()
   }

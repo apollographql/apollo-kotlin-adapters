@@ -1,5 +1,4 @@
 import com.gradleup.librarian.gradle.Librarian
-import com.gradleup.librarian.gradle.forEachKotlinCompilerOptions
 import org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi
 import org.jetbrains.kotlin.gradle.dsl.KotlinNativeCompilerOptions
 import org.jetbrains.kotlin.gradle.targets.js.dsl.ExperimentalWasmDsl
@@ -65,9 +64,11 @@ kotlin {
   }
 }
 
-forEachKotlinCompilerOptions {
-  freeCompilerArgs.add("-Xexpect-actual-classes")
-  if (this is KotlinNativeCompilerOptions) {
-    freeCompilerArgs.add("-opt-in=kotlinx.cinterop.UnsafeNumber")
+kotlin {
+  compilerOptions {
+    freeCompilerArgs.add("-Xexpect-actual-classes")
+    if (this is KotlinNativeCompilerOptions) {
+      freeCompilerArgs.add("-opt-in=kotlinx.cinterop.UnsafeNumber")
+    }
   }
 }

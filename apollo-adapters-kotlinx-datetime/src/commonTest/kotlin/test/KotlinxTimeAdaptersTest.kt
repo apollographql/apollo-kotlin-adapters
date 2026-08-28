@@ -13,9 +13,7 @@ import kotlinx.datetime.toInstant
 import okio.Buffer
 import kotlin.test.Test
 import kotlin.test.assertEquals
-import kotlin.time.ExperimentalTime
 
-@ExperimentalTime
 class KotlinxTimeAdaptersTest {
   private fun String.jsonReader() = BufferedSourceJsonReader(Buffer().writeUtf8("\"${this}\""))
 

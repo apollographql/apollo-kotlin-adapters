@@ -6,9 +6,7 @@ import com.apollographql.apollo.api.json.buildJsonString
 import okio.Buffer
 import kotlin.test.Test
 import kotlin.test.assertEquals
-import kotlin.time.ExperimentalTime
 
-@ExperimentalTime
 class KotlinInstantAdapterTest {
   private fun String.jsonReader() = BufferedSourceJsonReader(Buffer().writeUtf8("\"${this}\""))
 

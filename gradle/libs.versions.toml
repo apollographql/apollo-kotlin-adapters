@@ -4,5 +4,5 @@ apollo = "5.0.0"
 [libraries]
 apollo-api = { module = "com.apollographql.apollo:apollo-api", version.ref = "apollo" }
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test" }
-kotlinx-datetime = "org.jetbrains.kotlinx:kotlinx-datetime:0.8.0"
+kotlinx-datetime = "org.jetbrains.kotlinx:kotlinx-datetime:0.8.0-0.6.x-compat"
 bignum = "com.ionspin.kotlin:bignum:0.3.10"

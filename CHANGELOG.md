@@ -1,6 +1,23 @@
 # Next version (unreleased)
 
-# Version 0.0.6
+# Version 0.8.0
+
+Version 0.8.0 updates dependencies (Apollo Kotlin 5.0.0, Kotlin 2.3, kotlinx-datetime 0.8.0) and adds `linuxX64` and `watchosDeviceArm64` targets. Many thanks @veyndan, @MatthewFolbigg and @hrach for the contributions.
+
+This version targets Kotlin 2.3.20. If you're using Kotlin native/JS/wasm, you need to compile with `kotlinc` 2.3+. On Android/JVM, you need to compile with `kotlinc` 2.2+.
+
+
+## All changes
+* Make `apollo-api` an API dependency by @veyndan in https://github.com/apollographql/apollo-kotlin-adapters/pull/37
+* Bump librarian version by @martinbonnin in https://github.com/apollographql/apollo-kotlin-adapters/pull/43
+* Update Apollo to 5.0.0, KGP to 2.3.20 and Kotlin target to 2.2.20 by @martinbonnin in https://github.com/apollographql/apollo-kotlin-adapters/pull/44
+* Add watchosDeviceArm64 target by @MatthewFolbigg in https://github.com/apollographql/apollo-kotlin-adapters/pull/41
+* Update kotlinx-datetime to 0.8.0 by @martinbonnin in https://github.com/apollographql/apollo-kotlin-adapters/pull/45
+* Add linuxX64 target by @hrach in https://github.com/apollographql/apollo-kotlin-adapters/pull/40
+* Unbreak KDoc by @martinbonnin in https://github.com/apollographql/apollo-kotlin-adapters/pull/47
+* Bump target Kotlin version to 2.3 by @martinbonnin in https://github.com/apollographql/apollo-kotlin-adapters/pull/46
+
+# Version 0.7.6
 
 **⚠️Breaking change**: Version `0.7.0` bumps `kotlinx-datetime` to `0.7.0`⚠️
 

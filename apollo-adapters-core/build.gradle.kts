@@ -58,6 +58,11 @@ kotlin {
         implementation(npm("big.js", "5.2.2"))
       }
     }
+    findByName("linuxMain")?.apply {
+      dependencies {
+        implementation(libs.bignum)
+      }
+    }
     getByName("commonTest") {
       dependencies {
         implementation(libs.kotlin.test)

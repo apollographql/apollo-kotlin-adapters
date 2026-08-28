@@ -22,6 +22,7 @@ kotlin {
   tvosArm64()
   tvosX64()
   tvosSimulatorArm64()
+  linuxX64()
   js(IR) {
     nodejs()
   }
@@ -54,6 +55,11 @@ kotlin {
     findByName("jsCommonMain")?.apply {
       dependencies {
         implementation(npm("big.js", "5.2.2"))
+      }
+    }
+    findByName("linuxMain")?.apply {
+      dependencies {
+        implementation(libs.bignum)
       }
     }
     getByName("commonTest") {

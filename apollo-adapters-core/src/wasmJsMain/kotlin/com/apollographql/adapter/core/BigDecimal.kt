@@ -1,3 +1,5 @@
+@file:OptIn(ExperimentalWasmJsInterop::class)
+
 package com.apollographql.adapter.core
 
 @JsModule("big.js")

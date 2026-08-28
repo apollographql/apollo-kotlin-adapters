@@ -1,5 +1,5 @@
 [versions]
-apollo = "4.0.0"
+apollo = "5.0.0"
 
 [libraries]
 apollo-api = { module = "com.apollographql.apollo:apollo-api", version.ref = "apollo" }

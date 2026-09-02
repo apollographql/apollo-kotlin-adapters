@@ -18,7 +18,7 @@ Add to your project:
 
 ```toml
 [libraries]
-apollo-adapters-core = "com.apollographql.adapters:apollo-adapters-core:0.0.6"
+apollo-adapters-core = "com.apollographql.adapters:apollo-adapters-core:0.8.0"
 apollo-adapters-kotlinx-datetime = "com.apollographql.adapters:apollo-adapters-kotlinx-datetime:0.0.6"
 ```
 
